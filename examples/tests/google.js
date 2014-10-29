@@ -1,22 +1,8 @@
-/**
- * Sample automated test scenario for Nightwatch.js
- * 
- * > it navigates to google.com and searches for nightwatch,
- *   verifying if the term 'The Night Watch' exists in the search results  
- */
-
 module.exports = {
-  setUp : function() {
-    
-  },
-  
-  tearDown : function() {
-    
-  },
-  
+  tags: ['google'],
   'Demo test Google' : function (client) {
     client
-      .url("http://www.google.com")
+      .url('http://www.google.com')
       .waitForElementVisible('body', 1000)
       .assert.title('Google')
       .assert.visible('input[type=text]')
@@ -27,4 +13,4 @@ module.exports = {
       .assert.containsText('#main', 'The Night Watch')
       .end();
   }
-}
+};

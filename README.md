@@ -1,25 +1,18 @@
-NightWatch
-==========
+# Nightwatch
 
-[![Build Status](https://travis-ci.org/beatfactor/nightwatch.png?branch=master)](https://travis-ci.org/beatfactor/nightwatch)
+UI automated testing framework powered by [Node.js](http://nodejs.org/). It uses the [Selenium WebDriver API](https://code.google.com/p/selenium/wiki/JsonWireProtocol).
 
-UI automated testing framework based on [Node.js](http://nodejs.org/) and [Selenium WebDriver](http://docs.seleniumhq.org/projects/webdriver/)
+[![Build Status](https://travis-ci.org/beatfactor/nightwatch.png?branch=master)](https://travis-ci.org/beatfactor/nightwatch) [![NPM version](https://badge.fury.io/js/nightwatch.png)](http://badge.fury.io/js/nightwatch) [![Coverage Status](https://coveralls.io/repos/beatfactor/nightwatch/badge.png?branch=master)](https://coveralls.io/r/beatfactor/nightwatch?branch=master)
 
 ***
-## Quick Start
 
-## Developer Guide
-[http://nightwatchjs.org/guide](http://nightwatchjs.org/guide) 
-
-## API Reference
-[http://nightwatchjs.org/api](http://nightwatchjs.org/api) 
+#### [Homepage](http://nightwatchjs.org) | [Developer Guide](http://nightwatchjs.org/guide) | [API Reference](http://nightwatchjs.org/api)
 
 ### Selenium WebDriver standalone server
+Nightwatch works with the Selenium standalone server so the first thing you need to do is download the selenium server jar file `selenium-server-standalone-2.x.x.jar` from the Selenium releases page:
+**http://selenium-release.storage.googleapis.com/index.html**
 
-First thing you need to download the selenium server jar file `selenium-server-standalone-2.x.x.jar` from here: 
-(https://code.google.com/p/selenium/downloads/list)
-
-### Install NightWatch
+### Install Nightwatch
 
 Install Node.js and then:
 ```sh
@@ -29,10 +22,13 @@ $ npm install
 ```
 
 ### Run tests
-
-The tests for nightwatch are written using [nodeunit](https://github.com/caolan/nodeunit) as the test framework. 
-
-To run the nodeunit tests do:
+The tests for nightwatch are written using [nodeunit](https://github.com/caolan/nodeunit) as the test framework. To run the nodeunit tests do:
 ```sh
 $ npm test
-```  
+```
+
+### Discuss
+In addition to [Twitter](https://twitter.com/nightwatchjs), the [Mailing List/Google Group](https://groups.google.com/forum/#!forum/nightwatchjs) is also available for Nightwatch related discussions.
+
+### Setup Guides
+Browser specific setup and usage guides along with debugging instructions can be found on the [**Wiki**](https://github.com/beatfactor/nightwatch/wiki).
